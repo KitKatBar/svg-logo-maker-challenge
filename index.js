@@ -68,7 +68,6 @@ function init() {
     .then((response) => {
         console.log("Generating logo ...");
         const shape = shapes.createShapeObject(response);
-        console.log(shape);
 
         const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
