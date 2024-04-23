@@ -57,11 +57,17 @@ npm i validate-color --save
 
 This project automatically generates a SVG logo consisting of text, text color, a shape and the shape color.  The user will be prompted with several questions for input.  To get test input, please see the [Tests](#tests) section of this README.
 
-Additionally, I have provided a walkthrough video demonstrating how to use this program.  Click on [this link](https://drive.google.com/file/d/1ps7iYXFsbqvFB8ol70hnjE6tZt1LGvkB/view) to access the video.
+Additionally, I have provided a walkthrough video demonstrating how to use this program.  Click on [this link](https://drive.google.com/file/d/1ogoahbC_YqjDO5dAFLHvY4cmTxYt_ljJ/view) to access the video.
         
 ## Credits
 
-Licenses Badges & Links: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+SVG Preview Extension in VS Code: https://marketplace.visualstudio.com/items?itemName=jock.svg
+
+How to Create Basic Shapes: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes
+
+How to Put Text in Shapes: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts
+
+Validate Color Package on NPM: https://www.npmjs.com/package/validate-color
 
 Our instructor Drew Hoang for introducing us the Node.js and OOP this week.  He provides good metaphors for how to do exercises and also makes speed-run videos that are very insightful for providing information and for reviewing class material.
 
@@ -104,7 +110,10 @@ In order to test this SVG logo generator, you can copy and paste these answers f
   ```
   circle (or feel free to call it whatever you want)
   ```
-  
+This is what your generated logo should look like:
+
+![green circle with white SVG text](https://raw.githubusercontent.com/KitKatBar/svg-logo-maker-challenge/b07f4af2185d4f0a6f7cda38d8d2f68041152e6c/examples/circle.svg)
+
 Included also are some test suites for your convenience.  They will test to make sure that the generated shape string returned matches the inputted values (text, text color and shape color).  These tests will also adjust the user input in case they enter, for example, lowercase for the text (adjusted to uppercase) and uppercase for the colors (adjusted to lowercase).  While this will not affect the generated SVG logo, it is good practice to maintain consistency for each of the parameters.  Additionally, there are also validation checks for user input, which includes making sure the user enters 3 characters or less for the text and checking whether the color entered is a valid color.
 
 ## Questions
